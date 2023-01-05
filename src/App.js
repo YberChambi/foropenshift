@@ -2,12 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // crea un nuevo objeto `Date`
+  var today = new Date();
+ 
+  // obtener la fecha y la hora
+  var now = today.toLocaleString();
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hola mundo!!!
+        </p>
+        <p>
+          {now}
         </p>
         <a
           className="App-link"
